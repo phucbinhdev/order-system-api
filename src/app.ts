@@ -10,10 +10,32 @@ const app: Application = express();
 
 // Security middleware
 app.use(helmet());
-app.use(cors({
-    origin: config.cors.origin,
+// CORS configuration
+const corsOptions = {
+    origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
+        // Allow requests with no origin (mobile apps, Postman, etc.)
+        if (!origin) {
+            return callback(null, true);
+        }
+        
+        // In development, allow all origins
+        if (config.nodeEnv === 'development') {
+            return callback(null, true);
+        }
+        
+        // In production, check against allowed origins
+        const allowedOrigins = config.cors.origin.split(',').map(o => o.trim());
+        if (allowedOrigins.includes(origin) || allowedOrigins.includes('*')) {
+            return callback(null, true);
+        }
+        
+        callback(new Error('Not allowed by CORS'));
+    },
     credentials: true,
-}));
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+};
+app.use(cors(corsOptions));
 
 // Request parsing
 app.use(express.json({ limit: '10mb' }));

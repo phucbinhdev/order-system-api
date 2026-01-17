@@ -1,0 +1,352 @@
+[
+    {
+        "category": "Ưu đãi hôm nay",
+        "items": [
+            {
+                "name": "3 Gà Giòn Vui Vẻ + 1 Mỳ Ý Jolly + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa",
+                "description": "3 Gà Giòn Vui Vẻ + 1 Mỳ Ý Jolly + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa + 3 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "178.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230427065103055170/detail/368aa4fcc31f4489a6d2fafd5524a124_1736954999451263114.webp"
+            },
+            {
+                "name": "2 Gà Giòn Vui Vẻ + 2 Mỳ Ý Jolly vừa + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa",
+                "description": "2 Gà Giòn Vui Vẻ + 2 Mỳ Ý Jolly vừa + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa + 2 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "180.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230427065104014339/detail/1f46f641d356467e93b14cc92a7936de_1736954999416859131.webp"
+            },
+            {
+                "name": "3 Miếng gà giòn + 2 Mỳ Ý Jolly vừa + 1 Khoai tây chiên vừa + 3 Nước ngọt vừa",
+                "description": "3 Miếng gà giòn vui vẻ + 2 Mỳ ý Jolly + 1 Khoai tây chiên vừa + 3 Nước ngọt vừa + 3 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "225.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230427065104073270/detail/6def90589e6f4145950b0f46f30eb263_1736954999443375155.webp"
+            }
+        ]
+    },
+    {
+        "category": "Dành cho bạn",
+        "items": [
+            {
+                "name": "2 Gà Giòn Vui Vẻ + 2 Mỳ Ý Jolly vừa + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa",
+                "description": "2 Gà Giòn Vui Vẻ + 2 Mỳ Ý Jolly vừa + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa + 2 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "180.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230427065104014339/detail/1f46f641d356467e93b14cc92a7936de_1736954999416859131.webp"
+            },
+            {
+                "name": "3 Gà Giòn Vui Vẻ + 1 Mỳ Ý Jolly + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa",
+                "description": "3 Gà Giòn Vui Vẻ + 1 Mỳ Ý Jolly + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa + 3 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "178.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230427065103055170/detail/368aa4fcc31f4489a6d2fafd5524a124_1736954999451263114.webp"
+            },
+            {
+                "name": "3 Miếng gà giòn + 2 Mỳ Ý Jolly vừa + 1 Khoai tây chiên vừa + 3 Nước ngọt vừa",
+                "description": "3 Miếng gà giòn vui vẻ + 2 Mỳ ý Jolly + 1 Khoai tây chiên vừa + 3 Nước ngọt vừa + 3 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "225.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230427065104073270/detail/6def90589e6f4145950b0f46f30eb263_1736954999443375155.webp"
+            },
+            {
+                "name": "1 Mỳ Ý Jolly vừa + 1 Miếng Gà Giòn + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn",
+                "description": "1 Mì ý Jolly vừa + 1 Miếng Gà Giòn Vui Vẻ + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn + 1 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "93.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070935366483/detail/59d4f3cf580741c69ad2269f6d1a355e_1726570693468446323.webp"
+            },
+            {
+                "name": "1 Mỳ Ý Jolly vừa + 1 Miếng Gà Giòn Vui Vẻ + 1 Nước ngọt lớn",
+                "description": "1 Mì ý Jolly vừa + 1 Miếng Gà Giòn Vui Vẻ + 1 Nước ngọt lớn + 1 Tương Chua Ngọt",
+                "price": "78.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070936294180/detail/e2e2700e82b645b495b1aa283b89cd7a_1726570696245682254.webp"
+            },
+            {
+                "name": "1 Miếng Gà Giòn Vui Vẻ",
+                "description": "1 Miếng Gà Giòn Vui Vẻ + 1 Tương Chua Ngọt",
+                "price": "33.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20210423061334042189/detail/bd40628ab5214eec9af25dead8f2a729_1726570685219101080.webp"
+            },
+            {
+                "name": "2 Miếng Gà Giòn Vui Vẻ + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn",
+                "description": "2 Miếng Gà Giòn Vui Vẻ + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn + 2 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "91.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070936101370/detail/ef775f73d2b1479e819da9ea63964677_1726570677355711829.webp"
+            },
+            {
+                "name": "1 Cơm Gà Giòn Vui Vẻ + 1 Súp bí đỏ + 1 Nước ngọt lớn",
+                "description": "1 Cơm Gà Giòn Vui Vẻ + 1 Súp bí đỏ + 1 Nước ngọt lớn + 1 Tương Chua Ngọt",
+                "price": "63.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200612082336049870/detail/6fa4d3bd90c7402080aee6b6a3dac049_1726570684045307367.webp"
+            }
+        ]
+    },
+    {
+        "category": "Món Mới",
+        "items": [
+            {
+                "name": "CƠM GÀ MẮM TỎI",
+                "description": "1 Cơm gà mắm tỏi",
+                "price": "35.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20250321101012013269/detail/c6ab127dc8bc4b4a92ad1d1201214a03_1742551812493978640.webp"
+            },
+            {
+                "name": "COMBO CƠM GÀ MẮM TỎI",
+                "description": "1 Cơm gà mắm tỏi + 1 Pepsi vừa",
+                "price": "40.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20250321101012029119/detail/71eec35ffa194c5da7570f6ea5e17cce_1742551812680143230.webp"
+            }
+        ]
+    },
+    {
+        "category": "Cặp Đôi Ăn Ý",
+        "items": [
+            {
+                "name": "3 Gà Giòn Vui Vẻ + 1 Mỳ Ý Jolly + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa",
+                "description": "3 Gà Giòn Vui Vẻ + 1 Mỳ Ý Jolly + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa + 3 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "178.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230427065103055170/detail/368aa4fcc31f4489a6d2fafd5524a124_1736954999451263114.webp"
+            },
+            {
+                "name": "2 Gà Giòn Vui Vẻ + 2 Mỳ Ý Jolly vừa + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa",
+                "description": "2 Gà Giòn Vui Vẻ + 2 Mỳ Ý Jolly vừa + 1 Khoai tây chiên vừa + 2 Nước ngọt vừa + 2 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "180.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230427065104014339/detail/1f46f641d356467e93b14cc92a7936de_1736954999416859131.webp"
+            },
+            {
+                "name": "3 Miếng gà giòn + 2 Mỳ Ý Jolly vừa + 1 Khoai tây chiên vừa + 3 Nước ngọt vừa",
+                "description": "3 Miếng gà giòn vui vẻ + 2 Mỳ ý Jolly + 1 Khoai tây chiên vừa + 3 Nước ngọt vừa + 3 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "225.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230427065104073270/detail/6def90589e6f4145950b0f46f30eb263_1736954999443375155.webp"
+            },
+            {
+                "name": "Combo Gia Đình",
+                "description": "2 Gà Giòn + 2 Mì Ý Jolly + 2 Cơm Gà Giòn + 2 Khoai Tây Chiên Vừa + 2 Bánh Xoài Đào + 4 Nước Ngọt Lớn + 4 Tương Chua Ngọt + 2 Tương Cà",
+                "price": "364.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20211112085614421041/detail/62f30086145949d58176e68d410812b3_1726570669041857724.webp"
+            }
+        ]
+    },
+    {
+        "category": "Gà Giòn",
+        "items": [
+            {
+                "name": "2 Miếng Gà Giòn Vui Vẻ + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn",
+                "description": "2 Miếng Gà Giòn Vui Vẻ + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn + 2 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "91.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070936101370/detail/ef775f73d2b1479e819da9ea63964677_1726570677355711829.webp"
+            },
+            {
+                "name": "2 Miếng Gà Giòn Vui Vẻ + 1 Nước ngọt lớn",
+                "description": "2 Miếng Gà Giòn Vui Vẻ + 1 Nước ngọt lớn + 2 Tương Chua Ngọt",
+                "price": "81.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20210423061334185009/detail/d16687e0dd8f46e381c359eecd4eface_1726570681488931356.webp"
+            },
+            {
+                "name": "1 Miếng Gà Giòn Vui Vẻ + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn",
+                "description": "1 Miếng Gà Giòn Vui Vẻ + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn + 1 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "58.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070936197837/detail/973c30114d3c4b4db42878554a94f853_1726570682740707741.webp"
+            },
+            {
+                "name": "1 Cơm Gà Giòn Vui Vẻ + 1 Súp bí đỏ + 1 Nước ngọt lớn",
+                "description": "1 Cơm Gà Giòn Vui Vẻ + 1 Súp bí đỏ + 1 Nước ngọt lớn + 1 Tương Chua Ngọt",
+                "price": "63.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200612082336049870/detail/6fa4d3bd90c7402080aee6b6a3dac049_1726570684045307367.webp"
+            },
+            {
+                "name": "1 Miếng Gà Giòn Vui Vẻ",
+                "description": "1 Miếng Gà Giòn Vui Vẻ + 1 Tương Chua Ngọt",
+                "price": "33.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20210423061334042189/detail/bd40628ab5214eec9af25dead8f2a729_1726570685219101080.webp"
+            },
+            {
+                "name": "2 Miếng Gà Giòn Vui Vẻ + 1 Bánh xoài đào + 1 Nước ngọt lớn",
+                "description": "2 Miếng Gà Giòn Vui Vẻ + 1 Bánh xoài đào + 1 Nước ngọt lớn + 2 Tương Chua Ngọt",
+                "price": "91.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20210423061334148008/detail/28864b3402a740548a9a765e6d21f12b_1726570678810843072.webp"
+            },
+            {
+                "name": "1 Miếng Gà Giòn + 1 Khoai tây chiên vừa + 1 Bánh xoài đào + 1 Nước ngọt lớn",
+                "description": "1 Miếng Gà Giòn Vui Vẻ + 1 Khoai tây chiên vừa + 1 Bánh xoài đào + 1 Nước ngọt lớn + 1 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "78.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20210423061334036082/detail/7255a2a0bfb541aea0c5716331fc81e4_1726570680171396703.webp"
+            }
+        ]
+    },
+    {
+        "category": "Thêm Sốt",
+        "items": [
+            {
+                "name": "Thêm 2 Gói Tương Chua Ngọt",
+                "description": "",
+                "price": "1.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20251009165000021146/detail/48190f4ece0c470abe87f71528a74e53_1760028600392368712.webp"
+            },
+            {
+                "name": "Thêm 2 Gói Tương Cà",
+                "description": "",
+                "price": "1.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20251009165000060993/detail/d573f50654dc4079939fe45954207909_1760028600394355204.webp"
+            }
+        ]
+    },
+    {
+        "category": "Gà Cay",
+        "items": [
+            {
+                "name": "2 Miếng gà sốt cay + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn",
+                "description": "2 Miếng gà sốt cay + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn + 1 Tương Cà",
+                "price": "95.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070935226431/detail/3795459b47354cff86a21613ed15d9c3_1726570686190930089.webp"
+            },
+            {
+                "name": "2 Miếng gà sốt cay + 1 Nước ngọt lớn",
+                "description": "2 Miếng gà sốt cay + 1 Nước ngọt lớn + 1 Tương Cà",
+                "price": "85.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070936218543/detail/da21f6c99dd84482b65f57a1003af661_1726570688892586986.webp"
+            },
+            {
+                "name": "1 Miếng gà sốt cay + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn",
+                "description": "1 Miếng gà sốt cay + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn + 1 Tương Cà",
+                "price": "60.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070936263720/detail/442bc15f60914a88a1a07f1fc8b59abd_1726570690021895418.webp"
+            },
+            {
+                "name": "1 Cơm gà sốt cay + 1 Súp bí đỏ + 1 Nước ngọt lớn",
+                "description": "",
+                "price": "65.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200612082337024830/detail/5b0455b6c159455ab95c7b169155554b_1726570691234303920.webp"
+            },
+            {
+                "name": "1 Miếng Gà Sốt Cay",
+                "description": "",
+                "price": "35.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20210423061334069561/detail/93f415bf83f54562bbc57f01e5549c08_1726570692352451721.webp"
+            },
+            {
+                "name": "1 Miếng gà sốt cay + 1 Khoai tây chiên vừa + 1 Bánh xoài đào + 1 Nước ngọt lớn",
+                "description": "1 Miếng gà sốt cay + 1 Khoai tây chiên vừa + 1 Bánh xoài đào + 1 Nước ngọt lớn + 1 Tương Cà",
+                "price": "75.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20210423061334025800/detail/42060405791a49b8b80af734fe3737fc_1726570687576647002.webp"
+            }
+        ]
+    },
+    {
+        "category": "Mỳ Ý",
+        "items": [
+            {
+                "name": "1 Mỳ Ý Jolly vừa + 1 Miếng Gà Giòn + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn",
+                "description": "1 Mì ý Jolly vừa + 1 Miếng Gà Giòn Vui Vẻ + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn + 1 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "93.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070935366483/detail/59d4f3cf580741c69ad2269f6d1a355e_1726570693468446323.webp"
+            },
+            {
+                "name": "1 Mỳ Ý Jolly vừa+2 Gà giòn không xương+1 Khoai tây chiên vừa+1 Nước ngọt lớn",
+                "description": "1 Mì Ý Jolly vừa + 2 Miếng Gà Giòn Vui Vẻ không xương + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn + 1 Tương Chua Ngọt + 1 Tương Cà",
+                "price": "80.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070936064304/detail/83bfe728e87f4f17a66e7fad4db566c4_1726570694831295864.webp"
+            },
+            {
+                "name": "1 Mỳ Ý Jolly vừa + 1 Miếng Gà Giòn Vui Vẻ + 1 Nước ngọt lớn",
+                "description": "1 Mì ý Jolly vừa + 1 Miếng Gà Giòn Vui Vẻ + 1 Nước ngọt lớn + 1 Tương Chua Ngọt",
+                "price": "78.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070936294180/detail/e2e2700e82b645b495b1aa283b89cd7a_1726570696245682254.webp"
+            },
+            {
+                "name": "1 Mỳ Ý Jolly vừa + 2 Gà giòn không xương + 1 Nước ngọt lớn",
+                "description": "1 Mì Ý Jolly vừa + 2 Gà Giòn Vui Vẻ không xương + 1 Nước ngọt lớn + 1 Tương Chua Ngọt",
+                "price": "70.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070936227824/detail/a9a924709e2a4826a86b28448d2ac74f_1726570697501087075.webp"
+            },
+            {
+                "name": "1 Mỳ Ý Jolly vừa + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn",
+                "description": "1 Mì Ý Jolly vừa + 1 Khoai tây chiên vừa + 1 Nước ngọt lớn + 1 Tương Cà",
+                "price": "60.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070935427169/detail/cca0d92b77b149698616ef21247b7a97_1726570698832866414.webp"
+            }
+        ]
+    },
+    {
+        "category": "Burgers & Hotdogs",
+        "items": [
+            {
+                "name": "Burger Tôm",
+                "description": "1 Burger tôm",
+                "price": "40.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20231201083624071919/detail/3de9840672fa4558be364081d10b4331_1726570700049025930.webp"
+            },
+            {
+                "name": "Combo Burger Tôm 1",
+                "description": "1 Burger Tôm + 1 Pepsi vừa",
+                "price": "45.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20231201083624083524/detail/1d83604bdcff400f96306bc1f21c6c4d_1726570700983345266.webp"
+            },
+            {
+                "name": "Combo Burger Tôm 2",
+                "description": "1 Burger Tôm + 1 Khoai Tây Chiên vừa + 1 Pepsi vừa + 1 Tương Cà",
+                "price": "60.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20231201083625093457/detail/d97e07831fbc4a8b98e704a71f203427_1726570702234893101.webp"
+            },
+            {
+                "name": "1 Sandwich Gà + 1 Khoai tây lắc vị thịt nướng BBQ vừa + 1 Nước ngọt lớn",
+                "description": "",
+                "price": "55.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070935261840/detail/57fc1198c4ba451585d0060f93642ec8_1726570703456673371.webp"
+            },
+            {
+                "name": "1 HotDog + 1 Pepsi lớn",
+                "description": "1 HotDog + 1 Pepsi lớn + 1 Tương Cà",
+                "price": "35.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230615043839027746/detail/140d8732763d41ef98cebc0c7106f604_1726570704619124737.webp"
+            },
+            {
+                "name": "1 HotDog + 1 Khoai tây chiên vừa+ 1 Pepsi lớn",
+                "description": "1 HotDog + 1 Khoai tây chiên vừa + 1 Pepsi lớn + 2 Tương Cà",
+                "price": "50.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230615043839077090/detail/b1cadc347d0d4adfa185f65321d98597_1726570705814436974.webp"
+            }
+        ]
+    },
+    {
+        "category": "Desserts & Drinks",
+        "items": [
+            {
+                "name": "Khoai tây lắc vị thịt nướng BBQ - lớn",
+                "description": "1 Khoai tây lắc vị thịt nướng BBQlớn",
+                "price": "35.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070935247524/detail/d275a4e167ac47cfa1f923b2625b84f8_1726570707013921733.webp"
+            },
+            {
+                "name": "Khoai tây chiên - lớn",
+                "description": "1 Khoai Tây Chiên lớn + 2 Tương Cà",
+                "price": "25.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070935405484/detail/577390854e134e10b74f747cdf05e6e8_1726570707933175270.webp"
+            },
+            {
+                "name": "Súp bí đỏ",
+                "description": "1 Súp bí đỏ",
+                "price": "15.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20230112064731035421/detail/0561ae2f6800418dad48f8de1acf0e9b_1726570708803035816.webp"
+            },
+            {
+                "name": "Cacao sữa đá - lớn",
+                "description": "1 Cacao sữa đá lớn",
+                "price": "25.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070935384047/detail/7b032ca94b00483a8f33ca48206b2a89_1726570709554675607.webp"
+            },
+            {
+                "name": "Nước ép xoài đào",
+                "description": "1 Nước ép xoài đào",
+                "price": "20.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20240917105830039341/detail/9e9b63eb8e304ad3b3fbdd4281977105_1726570710437895743.webp"
+            },
+            {
+                "name": "1 Nước ngọt- lớn",
+                "description": "",
+                "price": "17.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070936206364/detail/7a73f75d80794e60a3c1fb750e474a04_1726570711368832484.webp"
+            },
+            {
+                "name": "Nước suối",
+                "description": "1 Nước suối",
+                "price": "8.000",
+                "image": "https://food-cms.grab.com/compressed_webp/items/VNITE20200331070936086801/detail/658facf1d47a412cb7a8a3eb75fc6d64_1726570712256779535.webp"
+            }
+        ]
+    }
+]
