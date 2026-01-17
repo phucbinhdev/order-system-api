@@ -19,6 +19,15 @@ router.get(
     orderController.getKitchenQueue
 );
 
+// Create manual order - waiter/admin/cashier
+router.post(
+    '/',
+    authorize('waiter', 'admin', 'superadmin', 'cashier'),
+    branchScope,
+    validate(orderValidation.createManualOrder),
+    orderController.create
+);
+
 // List orders - all staff can view
 router.get(
     '/',

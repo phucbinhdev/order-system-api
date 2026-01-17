@@ -77,6 +77,101 @@ export const getById = async (
 };
 
 /**
+ * POST /api/orders - Manual order creation (Staff)
+ */
+export const create = async (
+    req: AuthRequest,
+    res: Response,
+    next: NextFunction
+): Promise<void> => {
+    try {
+        const { tableId, items, note } = req.body;
+        const branchId = req.user?.branchId; // Staff creates order for their branch
+
+        if (!branchId) {
+            throw ApiError.badRequest('User does not belong to any branch');
+        }
+
+        // Validate table
+        const table = await Table.findOne({ _id: tableId, branchId });
+        if (!table) {
+            throw ApiError.notFound('Table not found in this branch');
+        }
+
+        if (table.currentOrderId) {
+            throw ApiError.badRequest(
+                'Table already has an active order. Please add items to existing order.'
+            );
+        }
+
+        // Get menu items and validate
+        const menuItemIds = items.map((i: any) => i.menuItemId);
+        const menuItems = await MenuItem.find({ _id: { $in: menuItemIds } });
+
+        if (menuItems.length !== menuItemIds.length) {
+            throw ApiError.badRequest('Some menu items not found');
+        }
+
+        // Check availability
+        const unavailable = menuItems.filter((m) => !m.isAvailable);
+        if (unavailable.length > 0) {
+            throw ApiError.badRequest(
+                `Items not available: ${unavailable.map((m) => m.name).join(', ')}`
+            );
+        }
+
+        // Build order items
+        const orderItems: Partial<IOrderItem>[] = items.map((item: any) => {
+            const menuItem = menuItems.find((m) => m._id.toString() === item.menuItemId);
+            return {
+                menuItemId: new mongoose.Types.ObjectId(item.menuItemId),
+                name: menuItem!.name,
+                price: menuItem!.price,
+                quantity: item.quantity,
+                note: item.note || '',
+                status: 'pending',
+                priority: 5,
+            };
+        });
+
+        // Generate order number
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const orderCount = await Order.countDocuments({
+            branchId,
+            createdAt: { $gte: today },
+        });
+
+        const order = new Order({
+            orderNumber: generateOrderNumber(orderCount + 1),
+            branchId,
+            tableId: table._id,
+            items: orderItems,
+            note: note || '',
+            createdBy: req.user?._id, // Track who created the order
+        });
+
+        order.calculateTotals();
+        await order.save();
+
+        // Update table
+        table.status = 'occupied';
+        table.currentOrderId = order._id as mongoose.Types.ObjectId;
+        await table.save();
+
+        // Notify kitchen
+        emitToKitchen(branchId.toString(), 'order:new', {
+            order,
+            table: { tableNumber: table.tableNumber },
+        });
+
+        ApiResponse.created(order, 'Order created successfully').send(res);
+    } catch (error) {
+        next(error);
+    }
+};
+
+/**
  * POST /api/tables/:qrCode/orders - Public: Create order from QR
  */
 export const createFromQR = async (

@@ -14,6 +14,21 @@ export const createOrder = Joi.object({
     note: Joi.string().max(500).optional().allow(''),
 });
 
+export const createManualOrder = Joi.object({
+    tableId: Joi.string().hex().length(24).required(),
+    items: Joi.array()
+        .items(
+            Joi.object({
+                menuItemId: Joi.string().hex().length(24).required(),
+                quantity: Joi.number().integer().min(1).required(),
+                note: Joi.string().max(200).optional().allow(''),
+            })
+        )
+        .min(1)
+        .required(),
+    note: Joi.string().max(500).optional().allow(''),
+});
+
 export const addItems = Joi.object({
     items: Joi.array()
         .items(
