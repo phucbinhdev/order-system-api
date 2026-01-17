@@ -40,6 +40,25 @@ const orderItemSchema = new Schema<IOrderItem>({
         type: Date,
         default: Date.now,
     },
+    selectedOptions: [{
+        optionGroupId: {
+            type: Schema.Types.ObjectId,
+            ref: 'OptionGroup',
+        },
+        optionGroupName: {
+            type: String,
+        },
+        optionId: {
+            type: Schema.Types.ObjectId,
+        },
+        optionName: {
+            type: String,
+        },
+        price: {
+            type: Number,
+            default: 0,
+        },
+    }],
 });
 
 interface IOrderMethods {
@@ -130,7 +149,11 @@ orderSchema.methods.calculateTotals = function (): IOrder {
     this.subtotal = this.items
         .filter((item: IOrderItem) => item.status !== 'cancelled')
         .reduce((sum: number, item: IOrderItem) => {
-            return sum + item.price * item.quantity;
+            const optionsTotal = item.selectedOptions?.reduce(
+                (optSum: number, opt: { price: number }) => optSum + (opt.price || 0),
+                0
+            ) || 0;
+            return sum + (item.price + optionsTotal) * item.quantity;
         }, 0);
     this.total = this.subtotal - this.discount;
     if (this.total < 0) this.total = 0;

@@ -1,5 +1,14 @@
 import Joi from 'joi';
 
+// Selected option schema for order items
+const selectedOptionSchema = Joi.object({
+    optionGroupId: Joi.string().hex().length(24).required(),
+    optionGroupName: Joi.string().max(100).required(),
+    optionId: Joi.string().hex().length(24).required(),
+    optionName: Joi.string().max(100).required(),
+    price: Joi.number().min(0).default(0),
+});
+
 export const createOrder = Joi.object({
     items: Joi.array()
         .items(
@@ -7,6 +16,7 @@ export const createOrder = Joi.object({
                 menuItemId: Joi.string().hex().length(24).required(),
                 quantity: Joi.number().integer().min(1).required(),
                 note: Joi.string().max(200).optional().allow(''),
+                selectedOptions: Joi.array().items(selectedOptionSchema).optional().default([]),
             })
         )
         .min(1)
@@ -22,6 +32,7 @@ export const createManualOrder = Joi.object({
                 menuItemId: Joi.string().hex().length(24).required(),
                 quantity: Joi.number().integer().min(1).required(),
                 note: Joi.string().max(200).optional().allow(''),
+                selectedOptions: Joi.array().items(selectedOptionSchema).optional().default([]),
             })
         )
         .min(1)
@@ -36,6 +47,7 @@ export const addItems = Joi.object({
                 menuItemId: Joi.string().hex().length(24).required(),
                 quantity: Joi.number().integer().min(1).required(),
                 note: Joi.string().max(200).optional().allow(''),
+                selectedOptions: Joi.array().items(selectedOptionSchema).optional().default([]),
             })
         )
         .min(1)

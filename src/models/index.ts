@@ -6,3 +6,4 @@ export { default as Order } from './Order';
 export { default as Promotion } from './Promotion';
 export { default as User } from './User';
 export { default as DailyReport } from './DailyReport';
+export { default as OptionGroup } from './OptionGroup';

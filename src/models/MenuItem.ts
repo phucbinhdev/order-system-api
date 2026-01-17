@@ -7,10 +7,13 @@ export interface IMenuItemDoc extends Document {
     slug: string;
     description: string;
     price: number;
+    originalPrice: number | null;
     image: string | null;
     isAvailable: boolean;
     preparationTime: number;
     sortOrder: number;
+    optionGroupIds: mongoose.Types.ObjectId[];
+    relatedProductIds: mongoose.Types.ObjectId[];
 }
 
 const menuItemSchema = new Schema(
@@ -45,6 +48,11 @@ const menuItemSchema = new Schema(
             required: [true, 'Price is required'],
             min: [0, 'Price cannot be negative'],
         },
+        originalPrice: {
+            type: Number,
+            default: null,
+            min: [0, 'Original price cannot be negative'],
+        },
         image: {
             type: String,
             default: null,
@@ -62,6 +70,14 @@ const menuItemSchema = new Schema(
             type: Number,
             default: 0,
         },
+        optionGroupIds: [{
+            type: Schema.Types.ObjectId,
+            ref: 'OptionGroup',
+        }],
+        relatedProductIds: [{
+            type: Schema.Types.ObjectId,
+            ref: 'MenuItem',
+        }],
     },
     {
         timestamps: true,

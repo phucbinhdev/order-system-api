@@ -68,6 +68,28 @@ export interface ICategory extends Document {
     isActive: boolean;
 }
 
+// Option interface
+export interface IOption {
+    _id?: Types.ObjectId;
+    name: string;
+    price: number;
+    isDefault: boolean;
+    isAvailable: boolean;
+}
+
+// OptionGroup document interface
+export interface IOptionGroup extends Document {
+    _id: Types.ObjectId;
+    name: string;
+    branchId: Types.ObjectId | null;
+    options: IOption[];
+    isRequired: boolean;
+    maxSelect: number;
+    minSelect: number;
+    isActive: boolean;
+    sortOrder: number;
+}
+
 // MenuItem document interface
 export interface IMenuItem extends Document {
     _id: Types.ObjectId;
@@ -77,10 +99,22 @@ export interface IMenuItem extends Document {
     slug: string;
     description: string;
     price: number;
+    originalPrice: number | null;
     image: string | null;
     isAvailable: boolean;
     preparationTime: number;
     sortOrder: number;
+    optionGroupIds: Types.ObjectId[];
+    relatedProductIds: Types.ObjectId[];
+}
+
+// Selected option interface (for orders)
+export interface ISelectedOption {
+    optionGroupId: Types.ObjectId;
+    optionGroupName: string;
+    optionId: Types.ObjectId;
+    optionName: string;
+    price: number;
 }
 
 // Order item interface
@@ -94,6 +128,7 @@ export interface IOrderItem {
     status: OrderItemStatus;
     priority: number;
     createdAt: Date;
+    selectedOptions: ISelectedOption[];
 }
 
 // Order document interface

@@ -8,6 +8,7 @@ import orderRoutes from './order.routes';
 import promotionRoutes from './promotion.routes';
 import statsRoutes from './stats.routes';
 import userRoutes from './user.routes';
+import optionGroupRoutes from './optionGroup.routes';
 
 const router = Router();
 
@@ -20,6 +21,7 @@ router.use('/orders', orderRoutes);
 router.use('/promotions', promotionRoutes);
 router.use('/stats', statsRoutes);
 router.use('/users', userRoutes);
+router.use('/option-groups', optionGroupRoutes);
 
 // Health check
 router.get('/health', (req, res) => {

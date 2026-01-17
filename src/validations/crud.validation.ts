@@ -47,10 +47,13 @@ export const createMenuItem = Joi.object({
     name: Joi.string().required(),
     description: Joi.string().optional().allow(''),
     price: Joi.number().min(0).required(),
+    originalPrice: Joi.number().min(0).optional().allow(null),
     image: Joi.string().uri().optional().allow(null, ''),
     preparationTime: Joi.number().integer().min(1).default(15),
     sortOrder: Joi.number().integer().default(0),
     branchId: Joi.string().hex().length(24).optional().allow(null),
+    optionGroupIds: Joi.array().items(Joi.string().hex().length(24)).optional().default([]),
+    relatedProductIds: Joi.array().items(Joi.string().hex().length(24)).optional().default([]),
 });
 
 export const updateMenuItem = Joi.object({
@@ -58,10 +61,13 @@ export const updateMenuItem = Joi.object({
     name: Joi.string().optional(),
     description: Joi.string().optional().allow(''),
     price: Joi.number().min(0).optional(),
+    originalPrice: Joi.number().min(0).optional().allow(null),
     image: Joi.string().uri().optional().allow(null, ''),
     preparationTime: Joi.number().integer().min(1).optional(),
     sortOrder: Joi.number().integer().optional(),
     isAvailable: Joi.boolean().optional(),
+    optionGroupIds: Joi.array().items(Joi.string().hex().length(24)).optional(),
+    relatedProductIds: Joi.array().items(Joi.string().hex().length(24)).optional(),
 });
 
 export const createPromotion = Joi.object({
