@@ -14,7 +14,7 @@ export const getAll = async (
     next: NextFunction
 ): Promise<void> => {
     try {
-        const { branchId, categoryId, isAvailable } = req.query;
+        const { branchId, categoryId, isAvailable, search } = req.query;
         const filter: any = {};
 
         if (branchId) {
@@ -25,6 +25,10 @@ export const getAll = async (
         }
         if (isAvailable !== undefined) {
             filter.isAvailable = isAvailable === 'true';
+        }
+        // Search by name (case-insensitive)
+        if (search && typeof search === 'string') {
+            filter.name = { $regex: search, $options: 'i' };
         }
 
         const menuItems = await MenuItem.find(filter)

@@ -1,4 +1,5 @@
 import mongoose, { Schema, Document } from 'mongoose';
+import { slugify } from '../utils/slugify';
 
 export interface IMenuItemDoc extends Document {
     categoryIds: mongoose.Types.ObjectId[];
@@ -111,11 +112,7 @@ menuItemSchema.index({ sortOrder: 1 });
 // Pre-save middleware for slug generation
 menuItemSchema.pre('save', { document: true, query: false }, function () {
     if (this.isModified('name') && this.name) {
-        this.slug = this.name
-            .toLowerCase()
-            .replace(/[^a-z0-9\s-]/g, '')
-            .replace(/\s+/g, '-')
-            .replace(/-+/g, '-');
+        this.slug = slugify(this.name);
     }
 });
 
