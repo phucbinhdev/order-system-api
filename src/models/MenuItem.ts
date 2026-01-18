@@ -80,6 +80,27 @@ const menuItemSchema = new Schema(
     },
     {
         timestamps: true,
+        toJSON: {
+            virtuals: true,
+            transform: (_doc: any, ret: any) => {
+                // Rename categoryIds to categories in output
+                if (ret.categoryIds) {
+                    ret.categories = ret.categoryIds;
+                    delete ret.categoryIds;
+                }
+                return ret;
+            },
+        },
+        toObject: {
+            virtuals: true,
+            transform: (_doc: any, ret: any) => {
+                if (ret.categoryIds) {
+                    ret.categories = ret.categoryIds;
+                    delete ret.categoryIds;
+                }
+                return ret;
+            },
+        },
     }
 );
 
