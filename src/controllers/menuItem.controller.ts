@@ -21,14 +21,14 @@ export const getAll = async (
             filter.$or = [{ branchId }, { branchId: null }];
         }
         if (categoryId) {
-            filter.categoryId = categoryId;
+            filter.categoryIds = { $in: [categoryId] };
         }
         if (isAvailable !== undefined) {
             filter.isAvailable = isAvailable === 'true';
         }
 
         const menuItems = await MenuItem.find(filter)
-            .populate('categoryId', 'name slug')
+            .populate('categoryIds', 'name slug')
             .sort({ sortOrder: 1 });
 
         ApiResponse.success(menuItems, 'Menu items retrieved').send(res);
@@ -47,7 +47,7 @@ export const getById = async (
 ): Promise<void> => {
     try {
         const menuItem = await MenuItem.findById(req.params.id)
-            .populate('categoryId', 'name slug');
+            .populate('categoryIds', 'name slug');
 
         if (!menuItem) {
             throw ApiError.notFound('Menu item not found');

@@ -160,7 +160,9 @@ export const getMenuByQR = async (
         const menu = categories.map((cat) => ({
             category: cat,
             items: menuItems.filter(
-                (item) => item.categoryId.toString() === cat._id.toString()
+                (item) => item.categoryIds.some(
+                    (catId) => catId.toString() === cat._id.toString()
+                )
             ),
         }));
 

@@ -1,7 +1,7 @@
 import mongoose, { Schema, Document } from 'mongoose';
 
 export interface IMenuItemDoc extends Document {
-    categoryId: mongoose.Types.ObjectId;
+    categoryIds: mongoose.Types.ObjectId[];
     branchId: mongoose.Types.ObjectId | null;
     name: string;
     slug: string;
@@ -18,11 +18,10 @@ export interface IMenuItemDoc extends Document {
 
 const menuItemSchema = new Schema(
     {
-        categoryId: {
+        categoryIds: [{
             type: Schema.Types.ObjectId,
             ref: 'Category',
-            required: [true, 'Category is required'],
-        },
+        }],
         branchId: {
             type: Schema.Types.ObjectId,
             ref: 'Branch',
@@ -84,7 +83,7 @@ const menuItemSchema = new Schema(
     }
 );
 
-menuItemSchema.index({ categoryId: 1, isAvailable: 1 });
+menuItemSchema.index({ categoryIds: 1, isAvailable: 1 });
 menuItemSchema.index({ branchId: 1, isAvailable: 1 });
 menuItemSchema.index({ sortOrder: 1 });
 

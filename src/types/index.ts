@@ -93,7 +93,7 @@ export interface IOptionGroup extends Document {
 // MenuItem document interface
 export interface IMenuItem extends Document {
     _id: Types.ObjectId;
-    categoryId: Types.ObjectId;
+    categoryIds: Types.ObjectId[];
     branchId: Types.ObjectId | null;
     name: string;
     slug: string;

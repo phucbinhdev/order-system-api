@@ -43,7 +43,7 @@ export const updateCategory = Joi.object({
 });
 
 export const createMenuItem = Joi.object({
-    categoryId: Joi.string().hex().length(24).required(),
+    categoryIds: Joi.array().items(Joi.string().hex().length(24)).min(1).required(),
     name: Joi.string().required(),
     description: Joi.string().optional().allow(''),
     price: Joi.number().min(0).required(),
@@ -57,7 +57,7 @@ export const createMenuItem = Joi.object({
 });
 
 export const updateMenuItem = Joi.object({
-    categoryId: Joi.string().hex().length(24).optional(),
+    categoryIds: Joi.array().items(Joi.string().hex().length(24)).min(1).optional(),
     name: Joi.string().optional(),
     description: Joi.string().optional().allow(''),
     price: Joi.number().min(0).optional(),
